@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Food : MonoBehaviour
 {
-	public bool isSpeedBoost;
-	public int calories;
+	public bool isSpeedBoost; //Speed boost flag
+	public int calories; //Calories given by consuming this food
 
     // Start is called before the first frame update
     void Start()
