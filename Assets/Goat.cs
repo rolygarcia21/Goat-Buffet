@@ -25,7 +25,7 @@ public class Goat : MonoBehaviour
 	[HideInInspector]
 	public static float normalSpeed = 0.15f; //Normal speed of goat
 	[HideInInspector]
-	public static float boostDuration = 2.0f; //Duration of all speed boosts. Might change to be variable
+	public static float boostDuration = 4.0f; //Duration of all speed boosts. Might change to be variable
 
 
 
