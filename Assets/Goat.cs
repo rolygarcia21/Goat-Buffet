@@ -77,7 +77,7 @@ public class Goat : MonoBehaviour
 			Food fs = other.gameObject.GetComponent<Food>();
 			
 			//Eat the food
-			EatObject(fs.calories);
+			EatObject(fs.calories, other.gameObject.name);
 
 			//If the food is a speed booster, boost speed. Speed boosts stack
 			if(fs.isSpeedBoost){
@@ -108,9 +108,9 @@ public class Goat : MonoBehaviour
     }
 
     //Food eating logic
-    void EatObject(int calories){
+    void EatObject(int calories, string name){
 
-    	print(this.name + " eaten: +" + calories + " calories");
+    	print(name + " eaten: +" + calories + " calories");
     	this.calorieCount += calories; //Add the calories to our current calories
 
     }
